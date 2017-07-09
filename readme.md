@@ -1,4 +1,4 @@
-##이미지 사이즈 기준 정립
+## 이미지 사이즈 기준 정립
 
 *이미지 파일명명 규칙 : Size_Ratio_DPR*
 현재 제공되고 있는 이미지
@@ -23,6 +23,6 @@
 `gulp.task('build', ['mincss','minjs','minhtml']);` 지정
 `mincss`, `minjs`, `minhtml` 결과물은 같은 위치의 dist 디렉토리에 담김.
 
-###Gulp install dependencies
+### Gulp install dependencies
 `npm install gulp`
 `npm install --save-dev`
