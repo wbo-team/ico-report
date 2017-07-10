@@ -24,5 +24,5 @@
 `mincss`, `minjs`, `minhtml` 결과물은 같은 위치의 dist 디렉토리에 담김.
 
 ### Gulp install dependencies
-`npm install gulp`
-`npm install --save-dev`
+- `npm install gulp`
+- `npm install --save-dev`
