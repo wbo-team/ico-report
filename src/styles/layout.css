@@ -10,8 +10,7 @@ File: Layout CSS
 
 @import url("fontawesome-4.6.3.min.css");
 @import url("framework.css");
-
-
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
 /* Rows
 --------------------------------------------------------------------------------------------------------------- */
 .row0, .row0 a{}
@@ -440,6 +439,11 @@ table a, #comments a{background-color:inherit;}
 	.split section{float:none; width:100%; padding:10% 5%;}
 }
 
-
-/* Calendar
---------------------------------------------------------------------------------------------------------------- */
+.hangul_font{
+  font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 400;
+   src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');
+}
