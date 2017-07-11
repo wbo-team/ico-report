@@ -386,36 +386,228 @@
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper row3">
-  <div class="hoc container clear">
-    <!-- ################################################################################################ -->
-    <ul id="testimonials" class="nospace group">
-      <h1>여기 Pricing</h1>
-      <li class="one_third first">
-        <figure><img class="circle" src="images/demo/60x60.png" alt="">
-          <figcaption><strong>A.Doe</strong><br>
-            <em>Position, Company Name</em></figcaption>
-        </figure>
-        <blockquote>Eros metus ornare et est at fermentum cursus nisi nulla at consectetur turpis suspendisse rhoncus est ipsum nec venenatis nulla gravida et integer quis ligula volutpat vehicula nisl quis suscipit turpis curabitur dictum maximus molestie cum sociis natoque penatibus et magnis dis.</blockquote>
-      </li>
-      <li class="one_third">
-        <figure><img class="circle" src="images/demo/60x60.png" alt="">
-          <figcaption><strong>B.Doe</strong><br>
-            <em>Position, Company Name</em></figcaption>
-        </figure>
-        <blockquote>Montes nascetur ridiculus mus maecenas sit amet aliquam dolor quisque felis ligula aliquam ac dolor sit amet sodales interdum massa aliquam ut quam finibus mattis neque a lobortis tortor sed fringilla sodales magna et mollis sem maximus ut fusce non ultricies erat integer euismod justo.</blockquote>
-      </li>
-      <li class="one_third">
-        <figure><img class="circle" src="images/demo/60x60.png" alt="">
-          <figcaption><strong>C.Doe</strong><br>
-            <em>Position, Company Name</em></figcaption>
-        </figure>
-        <blockquote>Eu sapien blandit dictum nullam turpis diam viverra sit amet ex ac laoreet condimentum nisi maecenas venenatis mauris eget dignissim lobortis proin vitae odio blandit mi dapibus volutpat mauris malesuada ornare velit quis ultrices mauris pretium sed fusce pharetra faucibus purus eget.</blockquote>
-      </li>
+<style scoped>
+
+body{
+  background-color: rgb(237, 237, 237);
+}
+
+#pricing{
+  /* width: 989px; */
+  margin: 60px auto; 
+  font-family: 'Open Sans', Helvetica;
+}
+
+.price_card{
+  /* width: 300px; */
+  background: rgb(255, 255, 255);
+  display: inline-table;
+  top: 0;
+  height: 384px;
+}
+/*
+.price_card:not(:last-child){
+  margin-right: 40px;
+} */
+.header{
+  color: rgb(255, 255, 255);
+}
+.alpha .header{
+  background: rgb(245, 166, 35);
+}
+.bravo .header{
+  background: rgb(246, 77, 77);
+}
+.charlie .header{
+  background: rgb(48, 219, 181);
+}
+.price{
+  width: 100%;
+  font-size: 40px;
+  font-weight: 300;
+  display: block;
+  text-align: center;
+  padding: 30px 0 10px;         
+}
+.name{
+  width: 100%;
+  font-size: 15px;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  padding: 0 0 30px;
+}
+.features{
+  list-style: none;
+  text-align: center;
+  color: rgb(138, 138, 138);
+  margin: 0;
+  padding: 0;
+}
+.features li{
+  margin: 0 35px;              
+  padding: 20px 15px;
+}
+.features li:not(:last-child){
+  border: 1px solid rgb(242, 242, 242);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+button{
+  color: rgb(255, 255, 255);
+  border: 0;
+  border-radius: 5px;
+  height: 40px;
+  width: 200px;
+  display: block;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 20px auto 35px;
+}
+.alpha button{
+  background: rgb(245, 166, 35);
+}
+.bravo button{
+  background: rgb(246, 77, 77);
+}
+.charlie button{
+  background: rgb(48, 219, 181);
+}
+.tip{
+  font-family: 'Indie Flower';
+  position: absolute;
+  color: rgb(117, 117, 117);
+  margin: 10px 5px;                
+}
+/* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+      .pricing{
+
+      }
+      .price_card{
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+        line-height: 0.71;
+        height: 220px;
+      }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+      .pricing{
+
+      }
+      .price_card{
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 230px;
+        line-height: 0.71;
+      }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+      .pricing{
+        width: 100%;
+
+      }
+      .price_card{
+        display: block;
+        margin-left: 70px;
+        margin-right: 70px;
+        height: 230px;
+        line-height: 0.71;
+      }
+
+    }
+
+    @media only screen and (min-width : 836px) {
+      .pricing{
+        width: 100%;
+      }
+      .price_card{
+        width: 33%;
+        display: inline-table;
+        margin: 0;
+        line-height: 1.01;
+         height: 334px;
+
+      }
+     
+    }
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+      .pricing{
+        width: 100%;
+      }
+      .price_card{
+        width: 33%;
+        display: inline-table;
+        line-height: 1.01;
+         height: 334px;
+      }
+      
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+      .pricing{
+        width: 100%;
+      }
+      .price_card{
+        width: 33.1%;
+        display: inline-table;
+         line-height: 1.01;
+         height: 334px;
+      }
+
+    }
+.pricing_tag {
+  text-align: center;
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+</style>
+<div id="pricing">
+<div class="pricing_tag"><span> Pricing </span></div>
+  <div class="price_card alpha">
+    <div class="header">
+      <span class="price">1개월 구독권</span>
+      <span class="name"> 0.001 BTC </span>
+
+    </div>
+    <ul class="features">
+      <li>프리미엄 ICO 리포트 1개월 구독권</li>
     </ul>
-    <!-- ################################################################################################ -->
+  </div>
+  <div class="price_card bravo">
+    <div class="header">
+      <span class="price">3개월 구독권 </span>
+      <span class="name">0.0021 BTC</span>
+    </div>
+    <ul class="features">
+      <li>프리미엄 ICO 리포트 3개월 구독권 </li>
+      <li>프라이빗 ICO 커뮤니티 초대</li>
+    </ul>
+    <!-- <span class="tip">* Most popular!</span> -->
+  </div>
+  <div class="price_card charlie">
+    <div class="header">
+      <span class="price">6개월 구독권</span>
+      <span class="name">0.0036 BTC</span>
+    </div>
+    <ul class="features">
+      <li>프리미엄 ICO 리포트 6개월 구독권 </li>
+      <li>프라이빗 ICO 커뮤니티 초대</li>
+    </ul>
   </div>
 </div>
+
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
