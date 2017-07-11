@@ -1,0 +1,1 @@
+$(document).ready(function(){$(window).width()<836&&$(".br_remove").hide()});
