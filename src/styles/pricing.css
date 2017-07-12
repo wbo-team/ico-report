@@ -1,0 +1,80 @@
+
+
+body {
+  margin: 0 auto;
+  min-width: 400px;
+  height: 100%;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1250px;
+
+}
+.content_center{
+  text-align: center;
+  margin: 0 auto;
+}
+
+p {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  color: #000000;
+}
+p.address {
+  margin-top: 20px;
+  border: 1px solid #979797;
+  font-weight: normal;
+  font-size: 14px;
+  position: relative;
+  width: 330px;
+  padding: 17px 18px 15px 18px;
+}
+p img {
+  width: 35px;
+  height: 35px;
+
+}
+
+.qrcode {
+  position: relative;
+  margin-top: 20px;
+}
+
+
+.step2, .step3 {
+  position: relative;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 5px 0;
+  color: #000000;
+}
+
+.transaction_input {
+  height: 55px;
+  width: 270px;
+  background-color: #ffffff;
+  color: #979797;
+  border: 1px solid #979797;
+  padding: 0px 15px;
+  font-weight: 400;
+  font-size: 12px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+
+
+@media screen and (max-width: 550px) {
+  .container {
+    width: 95%;
+  }
+}
