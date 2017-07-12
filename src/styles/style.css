@@ -2,6 +2,20 @@
     border-color: transparent ;
 }
 
+.transaction_input {
+  height: 55px;
+  width: 270px;
+  background-color: #ffffff;
+  color: #979797;
+  border: 1px solid #979797;
+  padding: 0px 15px;
+  font-weight: 400;
+  font-size: 12px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
 
 /* MailChimp Form Embed Code - Classic - 12/17/2015 v10.7 */
 #mc_embed_signup form {display:block; position:relative; text-align:left; padding:10px 0 10px 3%}
