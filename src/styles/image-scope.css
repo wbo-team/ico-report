@@ -1,0 +1,223 @@
+.first-image {
+      background-image:
+        -webkit-image-set(
+                url('../images/image1-set/image1_600.jpg') 1x,
+                url('../images/image1-set/image1_1218.jpg') 2x
+        );
+        -moz-image-set(
+                url('../images/image1-set/image1_600.jpg') 1x,
+                url('../images/image1-set/image1_1218.jpg') 2x
+        );
+        -ms-image-set(
+                url('../images/image1-set/image1_600.jpg') 1x,
+                url('../images/image1-set/image1_1218.jpg') 2x
+        );
+        -o-image-set(
+                url('../images/image1-set/image1_600.jpg') 1x,
+                url('../images/image1-set/image1_1218.jpg') 2x
+        );
+    }
+    @media (max-width: 600px)  {
+      .first-image {
+        background-image:
+          -webkit-image-set(
+                  url('../images/image1-set/image1_600.jpg') 1x,
+                  url('../images/image1-set/image1_1218.jpg') 2x
+          );
+          -moz-image-set(
+                  url('../images/image1-set/image1_600.jpg') 1x,
+                  url('../images/image1-set/image1_1218.jpg') 2x
+          );
+          -ms-image-set(
+                  url('../images/image1-set/image1_600.jpg') 1x,
+                  url('../images/image1-set/image1_1218.jpg') 2x
+          );
+          -o-image-set(
+                  url('../images/image1-set/image1_600.jpg') 1x,
+                  url('../images/image1-set/image1_1218.jpg') 2x
+          );
+      }
+    }
+    @media (min-width: 601px) and (max-width: 800px)  {
+      .first-image {
+        background-image:
+          -webkit-image-set(
+                  url('../images/image1-set/image1_895.jpg') 1x,
+                  url('../images/image1-set/image1_1534.jpg') 2x
+          );
+          -ms-image-set(
+                  url('../images/image1-set/image1_895.jpg') 1x,
+                  url('../images/image1-set/image1_1534.jpg') 2x
+          );
+          -moz-image-set(
+                  url('../images/image1-set/image1_895.jpg') 1x,
+                  url('../images/image1-set/image1_1534.jpg') 2x
+          );
+          -o-image-set(
+                  url('../images/image1-set/image1_895.jpg') 1x,
+                  url('../images/image1-set/image1_1534.jpg') 2x
+          );
+      }
+    }
+    @media (min-width : 801px) and (max-width: 1200px) {
+      .first-image {
+        background-image:
+          -webkit-image-set(
+                  url('../images/image1-set/image1_1218.jpg') 1x,
+                  url('../images/image1-set/image1_2420.jpg') 2x
+          );
+          -moz-image-set(
+                  url('../images/image1-set/image1_1218.jpg') 1x,
+                  url('../images/image1-set/image1_2420.jpg') 2x
+          );
+          -ms-image-set(
+                  url('../images/image1-set/image1_1218.jpg') 1x,
+                  url('../images/image1-set/image1_2420.jpg') 2x
+          );
+          -o-image-set(
+                  url('../images/image1-set/image1_1218.jpg') 1x,
+                  url('../images/image1-set/image1_2420.jpg') 2x
+          );
+
+      }
+    }
+    @media (min-width : 1201px) {
+      .first-image {
+        background-image:
+          -webkit-image-set(
+                  url('../images/image1-set/image1_1733.jpg') 1x,
+                  url('../images/image1-set/image1_3128.jpg') 2x
+          );
+          -moz-image-set(
+                  url('../images/image1-set/image1_1733.jpg') 1x,
+                  url('../images/image1-set/image1_3128.jpg') 2x
+          );
+          -ms-image-set(
+                  url('../images/image1-set/image1_1733.jpg') 1x,
+                  url('../images/image1-set/image1_3128.jpg') 2x
+          );
+          -o-image-set(
+                  url('../images/image1-set/image1_1733.jpg') 1x,
+                  url('../images/image1-set/image1_3128.jpg') 2x
+          );
+      }
+    }
+
+    .second-image {
+      background-image:
+        -webkit-image-set(
+          url('../images/image2-set/538_16_9_1x.jpg') 1x,
+          url('../images/image2-set/1073_16_9_2x.jpg') 2x
+        );
+        -moz-image-set(
+          url('../images/image2-set/538_16_9_1x.jpg') 1x,
+          url('../images/image2-set/1073_16_9_1x.jpg') 2x
+        );
+        -ms-image-set(
+          url('../images/image2-set/538_16_9_1x.jpg') 1x,
+          url('../images/image2-set/1073_16_9_1x.jpg') 2x
+        );
+        -o-image-set(
+          url('../images/image2-set/538_16_9_1x.jpg') 1x,
+          url('../images/image2-set/1073_16_9_1x.jpg') 2x
+        );
+    }
+    @media (max-width: 538px) {
+      .second-image {
+        background-image: -webkit-image-set(
+                url('../images/image2-set/538_16_9_1x.jpg') 1x,
+                url('../images/image2-set/1073_16_9_2x.jpg') 2x
+        );
+      -moz-image-set(url('../images/image2-set/538_16_9_1x.jpg') 1 x,
+      url('images/image2-set/1073_16_9_1x.jpg') 2 x);
+      -ms-image-set(url('../images/image2-set/538_16_9_1x.jpg') 1 x,
+      url('images/image2-set/1073_16_9_1x.jpg') 2 x);
+      -o-image-set(url('../images/image2-set/538_16_9_1x.jpg') 1 x,
+      url('../images/image2-set/1073_16_9_1x.jpg') 2 x);
+      }
+    }
+    @media (min-width: 539px) and (max-width: 800px)  {
+      .second-image {
+        background-image:
+        -webkit-image-set(
+          url('../images/image2-set/818_16_9_1x.jpg') 1x,
+          url('../images/image2-set/1462_16_9_1x.jpg') 2x
+        );
+        -moz-image-set(
+          url('../images/image2-set/818_16_9_1x.jpg') 1x,
+          url('../images/image2-set/1462_16_9_1x.jpg') 2x
+        );
+        -ms-image-set(
+          url('../images/image2-set/818_16_9_1x.jpg') 1x,
+          url('../images/image2-set/1462_16_9_1x.jpg') 2x
+        );
+        -o-image-set(
+          url('../images/image2-set/818_16_9_1x.jpg') 1x,
+          url('../images/image2-set/1462_16_9_1x.jpg') 2x
+        );
+      }
+    }
+    @media (min-width : 801px) and (max-width: 1200px) {
+      .second-image {
+        background-image:
+        -webkit-image-set(
+          url('../images/image2-set/1073_16_9_2x.jpg') 1x,
+          url('../images/image2-set/1866_21_9_2x.jpg') 2x
+        );
+        -moz-image-set(
+          url('../images/image2-set/1073_16_9_2x.jpg') 1x,
+          url('../images/image2-set/1866_21_9_2x.jpg') 2x
+        );
+        -o-image-set(
+          url('../images/image2-set/1073_16_9_2x.jpg') 1x,
+          url('../images/image2-set/1866_21_9_2x.jpg') 2x
+        );
+        -ms-image-set(
+          url('../images/image2-set/1073_16_9_2x.jpg') 1x,
+          url('../images/image2-set/1866_21_9_2x.jpg') 2x
+        );
+
+      }
+    }
+    @media (min-width : 1201px) and (max-width: 1600px) {
+      .second-image {
+        background-image:
+      -webkit-image-set(
+        url('../images/image2-set/1258_16_9_1x.jpg') 1x,
+        url('../images/image2-set/2461_21_9_2x.jpg') 2x
+      );
+      -moz-image-set(
+        url('../images/image2-set/1258_16_9_1x.jpg') 1x,
+        url('../images/image2-set/2461_21_9_2x.jpg') 2x
+      );
+      -o-image-set(
+        url('../images/image2-set/1258_16_9_1x.jpg') 1x,
+        url('../images/image2-set/2461_21_9_2x.jpg') 2x
+      );
+      -ms-image-set(
+        url('../images/image2-set/1258_16_9_1x.jpg') 1x,
+        url('../images/image2-set/2461_21_9_2x.jpg') 2x
+      );
+      }
+    }
+      @media (min-width : 1601px) {
+      .second-image {
+        background-image:
+      -webkit-image-set(
+        url('../images/image2-set/1642_21_9_2x.jpg') 1x,
+        url('../images/image2-set/2461_21_9_2x.jpg') 2x
+      );
+      -moz-image-set(
+        url('../images/image2-set/1642_21_9_2x.jpg') 1x,
+        url('../images/image2-set/2461_21_9_2x.jpg') 2x
+      );
+      -o-image-set(
+        url('../images/image2-set/1642_21_9_2x.jpg') 1x,
+        url('../images/image2-set/2461_21_9_2x.jpg') 2x
+      );
+      -ms-image-set(
+        url('../images/image2-set/1642_21_9_2x.jpg') 1x,
+        url('../images/image2-set/2461_21_9_2x.jpg') 2x
+      );
+      }
+    }
