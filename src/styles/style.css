@@ -1,5 +1,13 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+
 .row1    {
     border-color: transparent ;
+}
+
+.hangul_font{
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .transaction_input {

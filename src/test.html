@@ -3,30 +3,304 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-
+    <link href="test.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
+<div id="pricing">
 
-<div id="test">
-    <h1> hello</h1>
+    <div class="price_card alpha hangul_font">
+        <div class="header">
+            <span class="price">1 month </span>
+            <span class="name"> 0.001 BTC </span>
+        </div>
+
+        <ul class="features">
+            <li>프리미엄 ICO <br class="br_remove"> 리포트 1개월 구독권</li>
+        </ul>
+    </div>
+
+
+
+    <div class="price_card bravo hangul_font">
+        <div class="header">
+            <span class="price">3 month </span>
+            <span class="name">0.0021 BTC <strong>(30% OFF)</strong></span>
+        </div>
+        <ul class="features">
+            <li>프리미엄 ICO <br class="br_remove">리포트 3개월 구독권 </li>
+            <li>프라이빗 ICO <br class="br_remove">커뮤니티 초대</li>
+        </ul>
+        <!-- <span class="tip">* Most popular!</span> -->
+    </div>
+
+    <div class="price_card charlie hangul_font">
+        <div class="header">
+            <span class="price">6 month</span>
+            <span class="name">0.0036 BTC <strong>(40% OFF)</strong></span>
+        </div>
+        <ul class="features">
+            <li>프리미엄 ICO <br class="br_remove">리포트 6개월 구독권 </li>
+            <li>프라이빗 ICO <br class="br_remove">커뮤니티 초대</li>
+        </ul>
+    </div>
+
 </div>
 
-<style>
-    #test {
-        background-image: url(images/image3.jpeg);
-        background-image: -webkit-image-set(url(images/image1.jpeg) 1x,
-        url(images/image2.jpeg) 2x);
-        background-image: -moz-image-set(url(assets/test.png) 1x,
-        url(assets/test-moz.png) 2x);
-        background-image: -o-image-set(url(assets/test.png) 1x,
-        url(assets/test-o.png) 2x);
-        background-image: -ms-image-set(url(assets/test.png) 1x,
-        url(assets/test-ms.png) 2x);
-        width:200px;
-        height:75px;
+
+
+    <style scoped>
+
+    body{
+        background-color: rgb(237, 237, 237);
     }
+
+    #pricing{
+        /* width: 989px; */
+        margin: 60px auto;
+        text-align: center;
+    }
+
+    .price_card{
+        /* width: 300px; */
+        background: rgb(255, 255, 255);
+        display: inline-table;
+        top: 0;
+        height: 384px;
+    }
+
+    /*.price_card:not(:last-child){*/
+
+    /*.price_card .alpha .bravo .charlie {*/
+    /*margin-right: 20px;*/
+    /*margin-left:  20px;*/
+    /*}*/
+
+
+    .header{
+        color: rgb(255, 255, 255);
+    }
+    .alpha .header{
+        background: #4AA1B4;
+    }
+    .bravo .header{
+        background: #6ac2ec;
+    }
+    .charlie .header{
+        background: #2c5967;
+    }
+
+    .price{
+        width: 100%;
+        font-size: 40px;
+        font-weight: 500;
+        display: block;
+        text-align: center;
+        padding: 30px 0 10px;
+    }
+    .name{
+        width: 100%;
+        font-size: 20px;
+        font-weight: 300;
+        display: block;
+        text-align: center;
+        padding: 0 0 30px;
+    }
+    .features{
+        list-style: none;
+        text-align: center;
+        color: rgb(138, 138, 138);
+        margin: 0;
+        padding: 0;
+    }
+    .features li{
+        margin: 0 35px;
+        padding: 20px 15px;
+    }
+    .features li:not(:last-child){
+        border: 1px solid rgb(242, 242, 242);
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+    button{
+        color: rgb(255, 255, 255);
+        border: 0;
+        border-radius: 5px;
+        height: 40px;
+        width: 200px;
+        display: block;
+        font-weight: 700;
+        font-size: 15px;
+        text-transform: uppercase;
+        margin: 20px auto 35px;
+    }
+    .alpha button{
+        background: rgb(245, 166, 35);
+    }
+    .bravo button{
+        background: rgb(246, 77, 77);
+    }
+    .charlie button{
+        background: rgb(48, 219, 181);
+    }
+    .tip{
+        font-family: 'Indie Flower';
+        position: absolute;
+        color: rgb(117, 117, 117);
+        margin: 10px 5px;
+    }
+    /* Custom, iPhone Retina */
+    @media only screen and (min-width : 320px) {
+        .features li{
+            color: black;
+        }
+        .price_card{
+            display: block;
+            margin-left: 20px;
+            margin-right: 20px;
+            line-height: 0.71;
+
+        }
+        .alpha{
+            height: 190px;
+        }
+
+        .bravo {
+            height: 220px;
+        }
+
+        .charlie{
+            height: 220px;
+        }
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (min-width : 480px) {
+        .pricing{
+
+        }
+        .price_card{
+            display: block;
+            margin-left: 20px;
+            margin-right: 20px;
+            height: 230px;
+            line-height: 0.71;
+            font-size: 15px;
+        }
+        .alpha{
+            height: 190px;
+        }
+
+        .bravo {
+            height: 220px;
+        }
+
+        .charlie{
+            height: 220px;
+        }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+        .pricing{
+            width: 100%;
+
+        }
+        .price_card{
+            display: block;
+            margin-left: 70px;
+            margin-right: 70px;
+            font-size: 17px;
+        }
+
+        .alpha{
+            height: 180px;
+        }
+
+        .bravo {
+            height: 230px;
+        }
+
+        .charlie{
+            height: 230px;
+        }
+        .price{
+
+        }
+        .name{
+
+        }
+    }
+
+    @media only screen and (min-width : 836px) {
+        .pricing{
+            width: 100%;
+        }
+        .price_card{
+            width: 28%;
+            display: inline-table;
+            /*margin: 0;*/
+            line-height: 1.01;
+            height: 280px;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 15px;
+        }
+        .price{
+            font-size: 36px;
+        }
+        .name{
+            font-size: 18px;
+        }
+
+    }
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+        .pricing{
+            width: 100%;
+        }
+        .price_card{
+            width: 25%;
+            display: inline-table;
+            line-height: 1.01;
+            height: 300px;
+            margin-left: 20px;
+            margin-right: 20px;
+            font-size: 17px;
+
+        }
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+        .pricing{
+            width: 100%;
+        }
+        .price_card{
+            width: 23%;
+            display: inline-table;
+            line-height: 1.01;
+            height: 290px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .features{
+            font-size: 17px;
+        }
+
+    }
+    .pricing_tag {
+        text-align: center;
+        font-size: 55px;
+        margin-bottom: 20px;
+    }
+
 </style>
+
+
+
 
 </body>
 </html>
