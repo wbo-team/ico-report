@@ -18,7 +18,7 @@ body {
   width: 80%;
   margin: 0 auto;
   max-width: 1250px;
-
+  margin-bottom: 20px;
 }
 .content_center{
   text-align: center;
@@ -88,8 +88,11 @@ h2 {
 
 #pricing-container{
   display: inline-block;
-  margin: 30px;
-  margin-right:0;
+  margin-top: 30px;
+  margin-bottom: : 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 80%;
   /*text-align: center;*/
 }
 
@@ -286,7 +289,21 @@ h2 {
 
 /*MEDIA QUERY*/
 
-@media (min-width: 1200px) {
+
+@media (min-width: 1270px) {
+  
+  .container {
+    width: 85%
+  }
+
+  #pricing-container {
+    width: 100%;
+    margin-left: 60px;
+  }
+  .pricing-table {
+    height: 26em;
+  }
+
   .pricing-card-top h2{
     font-size : 30px;
   }
@@ -301,28 +318,76 @@ h2 {
   }
 }
 
+@media (min-width: 1200px) {
+  
+  .container {
+    width: 85%
+  }
+
+  #pricing-container {
+    width: 100%;
+    margin-left: 60px;
+  }
+  .pricing-table {
+    height: 24em;
+  }
+
+  .pricing-card-top h2{
+    font-size : 28px;
+  }
+  .price h1 {
+    font-size: 43px;
+  }
+  .price h2 {
+    font-size: 17px;
+  }
+  .pricing-contents ul{
+    font-size : 16px;
+  }
+}
+
 @media (min-width: 1000px) and (max-width: 1199px) {
+  
+  .container {
+    width: 80%
+  }
+
+  #pricing-container {
+    width: 100%;
+    margin-left: 30px;
+  }
+  .pricing-table {
+    height: 24.7em;
+  }
   .pricing-card-top h2{
     font-size : 30px;
   }
   .price h1 {
     /*font-size: 45px;*/
-    font-size: 3.3vw;
+    font-size: 3.1vw;
   }
   .price h2 {
-    font-size: 1.8vw;
+    font-size: 1.7vw;
   }
   .pricing-contents ul{
-    font-size : 1.4vw;
+    font-size : 1.3vw;
   }
 }
 
 
 
-/*for medium size screen*/
-@media  (min-width: 661px) and (max-width: 999px ) {
+@media  (min-width: 812px) and (max-width: 999px ) {
+  
+  .container {
+    width: 85%
+  }
+
+  #pricing-container {
+    width: 100%;
+  }
+
   .pricing-table{
-    height: 340px;
+    height: 350px;
 
   }
   .pricing-table{
@@ -365,6 +430,60 @@ h2 {
 
 }
 
+/*for medium size screen*/
+@media  (min-width: 661px) and (max-width: 811px ) {
+  
+  .container {
+    width: 90%
+  }
+  .pricing-table{
+    height: 340px;
+
+  }
+  .pricing-table{
+    margin: 3em 0 0 0;
+  }
+  .pricing-card-top{
+    width:100%;
+  }
+
+  #pricing-container {
+    width: 100%;
+  }
+
+  #pricing-container .card-2 {
+    width: 33%;
+  }
+  #pricing-container .card-1 {
+    width: 33%;
+  }
+  #pricing-container .card-3 {
+    width: 33%;
+  }
+  .pricing-contents {
+    text-align: center;
+  }
+  .pricing-card-top h2{
+    font-size: 3vw;
+  }
+  .pricing-contents a{
+    text-align: center;
+    font-size: 1.8vw;
+    margin: 1vw auto;
+  }
+  .pricing-contents ul{
+    font-size: 1.7vw;
+    line-height: 180%;
+
+  }.price h1 {
+     font-size: 3.5vw;
+   }
+  .price h2 {
+    font-size: 2.3vw;
+  }
+
+}
+
 
 
 
@@ -374,8 +493,16 @@ h2 {
     width: 100%;
     display: inline-block;
   }
-  .container{
-    text-align: center;
+
+  .card-1 {
+    float: none;
+  }
+
+  .card-2 {
+    float: none;
+  }
+  .card-3 {
+    float: none;
   }
   .pricing-table{
     height: 260px;
@@ -412,17 +539,17 @@ h2 {
     text-align: center;
   }
   .pricing-card-top h2{
-    font-size: 20px;
+    font-size: 18px;
   }
   .pricing-contents a{
     width: 100%;
     /*line-height: 40%;*/
     font-weight: 400;
-    font-size: 15px;
+    font-size: 13px;
     margin: 8px auto;
   }
   .pricing-contents ul{
-    font-size: 15px;
+    font-size: 13px;
     line-height: 130%;
     margin: 0 auto;
 
@@ -431,7 +558,7 @@ h2 {
    }
   .price h2 {
     line-height: 50%;
-    font-size: 20px;
+    font-size: 18px;
     margin: 4px auto;
   }
   .pricing-table hr {
