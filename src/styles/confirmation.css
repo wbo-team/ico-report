@@ -1,0 +1,18 @@
+body {
+	
+}
+
+.container{
+	text-align: center;
+	margin: 150px auto;
+}
+
+.close-button {
+	
+	margin : 15px;
+	background-color: #32CD32;
+	color: white;
+	font-size : 16px;
+}
+
+
